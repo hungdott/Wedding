@@ -1273,19 +1273,29 @@
     <!-- color-switcher -->
     </div>
     <div id="speakerId" style="position: fixed; left: 15px; bottom: 15px;">
-		<audio src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3" id="audio" preload="none" loop></audio>
+		<div id="music-player">
+			<audio controls id="audio-player" style="display:none;"></audio>
+			<ul id="playlist" style="display:none;">
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/BaiNayKhongDeDiDien.mp3">Song 7</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/EmDongYIDo.mp3">Song 3</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/NgayDauTien.mp3">Song 4</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3">Song 1</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/GioKhongCuoiThiNaoCuoi.mp3">Song 2</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/RoiToiLuon.mp3">Song 5</li>
+				<li class="song" data-src="./WeddingPlanner/sources/music_HungLoan/YeuLaCuoi.mp3">Song 6</li>
+				
+			</ul>
+		</div>
+		<!--<audio src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3" id="audio" preload="none" loop></audio>
         <audio src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3" id="audio_1" preload="none" loop></audio>
         <audio src="./WeddingPlanner/sources/music_HungLoan/GioKhongCuoiThiNaoCuoi.mp3" id="audio_2" preload="none" loop></audio>
         <audio src="./WeddingPlanner/sources/music_HungLoan/NgayDauTien.mp3" id="audio_3" preload="none"
             loop></audio>
         <audio src="./WeddingPlanner/sources/music_HungLoan/LamVoAnhNhe.mp3" id="audio_4" preload="none" loop></audio>
         <audio src="./WeddingPlanner/sources/music_HungLoan/EmDongYIDo.mp3" id="audio_5"
-            preload="none" loop></audio>
+            preload="none" loop></audio>-->
         <span id="playerVolumeOff">
-			<a href="javascript:playSoundMultiple();">
-				<!--<svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
-						  <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"></path>
-				</svg>-->
+			<a>
 				<svg style="width:30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
 					<defs>
 					</defs>
@@ -1304,12 +1314,7 @@
                     height="30" border="0" alt="Click for Sound"></a><br>-->
         </span>
         <span style="display:none;" id="playerVolumeOn">
-			<a href="javascript:playSoundMultiple();">
-				<!--<svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
-					  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
-					  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
-					  <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path>
-					</svg>-->
+			<a>
 				<svg style="width:30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
 					<defs>
 					</defs>
@@ -1342,7 +1347,7 @@
     <!-- Custom script for this template -->
     <script src="./WeddingPlanner/script.js"></script>
     <a href="#" class="back-to-top"><i class="ti-arrow-up"></i></a>
-    <script>
+    <!--<script>
         var numberSound = 0;
         var countClickSound = 0;
         function playSound() {
@@ -1431,7 +1436,52 @@
                 .then(response => alert('Thank you for your message!'))
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
+    </script>-->
+	<script>
+		var audioPlayer = document.getElementById("audio-player");
+        var playlist = document.getElementById("playlist");
+        var songs = document.querySelectorAll(".song");
+        var currentSongIndex = 0;
+
+        function playNextSong() {
+            // Dừng bài hát hiện tại (nếu có)
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+
+            // Tắt lớp playing của tất cả các bài hát
+            songs.forEach(function(s) {
+                s.classList.remove("playing");
+            });
+
+            // Chơi bài hát tiếp theo trong danh sách
+            var nextSong = songs[currentSongIndex];
+            var songSrc = nextSong.getAttribute("data-src");
+            audioPlayer.src = songSrc;
+            audioPlayer.play();
+
+            // Đánh dấu bài hát đang chơi
+            nextSong.classList.add("playing");
+
+            // Tăng chỉ số của bài hát tiếp theo
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+        }
+
+        // Lập lịch phát tự động bài hát đầu tiên
+        playNextSong();
+		//$('#audio-player').trigger('play');
+        // Lắng nghe sự kiện kết thúc của bài hát hiện tại và chơi bài hát tiếp theo
+        audioPlayer.addEventListener("ended", playNextSong);
+		$("#playerVolumeOff").click(function () {
+			document.getElementById("playerVolumeOff").style.display = "none";
+            document.getElementById("playerVolumeOn").style.display = "block";
+			$('#audio-player').trigger('play');
+		});
+		$("#playerVolumeOn").click(function () {
+			document.getElementById("playerVolumeOff").style.display = "block";
+            document.getElementById("playerVolumeOn").style.display = "none";
+			$('#audio-player').trigger('pause');
+		});
+   </script>
 
 </body>
 
