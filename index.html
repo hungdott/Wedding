@@ -35,18 +35,172 @@
             right: 0px !important;
         }
 
-        body {
-            background-image: url('./WeddingPlanner/heart.gif');
-            background-size: cover;
-            height: 100vh;
-            padding: 0;
-            margin: 0;
+		@-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
         }
+
+        @-webkit-keyframes snowflakes-shake {
+            0%,100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+            0%,100% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+        }
+
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall,snowflakes-shake;
+            -webkit-animation-duration: 10s,3s;
+            -webkit-animation-timing-function: linear,ease-in-out;
+            -webkit-animation-iteration-count: infinite,infinite;
+            -webkit-animation-play-state: running,running;
+            animation-name: snowflakes-fall,snowflakes-shake;
+            animation-duration: 10s,3s;
+            animation-timing-function: linear,ease-in-out;
+            animation-iteration-count: infinite,infinite;
+            animation-play-state: running,running;
+        }
+
+            .snowflake:nth-of-type(0) {
+                left: 1%;
+                -webkit-animation-delay: 0s,0s;
+                animation-delay: 0s,0s
+            }
+
+            .snowflake:nth-of-type(1) {
+                left: 10%;
+                -webkit-animation-delay: 1s,1s;
+                animation-delay: 1s,1s
+            }
+
+            .snowflake:nth-of-type(2) {
+                left: 20%;
+                -webkit-animation-delay: 6s,.5s;
+                animation-delay: 6s,.5s
+            }
+
+            .snowflake:nth-of-type(3) {
+                left: 30%;
+                -webkit-animation-delay: 4s,2s;
+                animation-delay: 4s,2s
+            }
+
+            .snowflake:nth-of-type(4) {
+                left: 40%;
+                -webkit-animation-delay: 2s,2s;
+                animation-delay: 2s,2s
+            }
+
+            .snowflake:nth-of-type(5) {
+                left: 50%;
+                -webkit-animation-delay: 8s,3s;
+                animation-delay: 8s,3s
+            }
+
+            .snowflake:nth-of-type(6) {
+                left: 60%;
+                -webkit-animation-delay: 6s,2s;
+                animation-delay: 6s,2s
+            }
+
+            .snowflake:nth-of-type(7) {
+                left: 70%;
+                -webkit-animation-delay: 2.5s,1s;
+                animation-delay: 2.5s,1s
+            }
+
+            .snowflake:nth-of-type(8) {
+                left: 80%;
+                -webkit-animation-delay: 1s,0s;
+                animation-delay: 1s,0s
+            }
+
+            .snowflake:nth-of-type(9) {
+                left: 90%;
+                -webkit-animation-delay: 3s,1.5s;
+                animation-delay: 3s,1.5s
+            }
+
+            .snowflake:nth-of-type(10) {
+                left: 25%;
+                -webkit-animation-delay: 2s,0s;
+                animation-delay: 2s,0s
+            }
+
+            .snowflake:nth-of-type(11) {
+                left: 65%;
+                -webkit-animation-delay: 4s,2.5s;
+                animation-delay: 4s,2.5s
+            }
+			.fa-heart-o{
+				font-size: 60px;
+				color: #e4a6a6;
+			}
+			<!--h2{
+				font-weight:100;
+			}
+			.wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2 {
+				font-size: 24px;
+			}-->
     </style>
 </head>
 
 <body>
-
+	<div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 15px;"/></div>
+        <div class="snowflake"><img src="./WeddingPlanner/glossy heart_3782767.png" style="max-width: 10px;"/></div>
+    </div>
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
@@ -89,7 +243,7 @@
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
                                         <li class="menu-item-has-children">
                                             <!-- <a href="https://nhunghieu.github.io#">Home</a> -->
-                                            <a href="#">Home</a>
+                                            <a href="#">Trang chủ</a>
                                             <!-- <ul class="sub-menu">
                                                 <li><a href="#">Main Home</a></li>
                                                 <li><a href="https://wpocean.com/html/tf/loveme/index-2.html">Wedding Planner</a></li>
@@ -101,19 +255,22 @@
                                             </ul> -->
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#couple">Couple</a>
+                                            <a href="#couple">Cặp đôi</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#story">Story</a>
+                                            <a href="#story">Chuyện tình yêu</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#gallery">Photos</a>
+                                            <a href="#gallery">Album cưới</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#RSVP">Wishes</a>
+                                            <a href="#RSVP">Lời chúc</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#event">Events</a>
+                                            <a href="#event">Sự kiện</a>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#HappyMoney">Mừng cưới</a>
                                         </li>
                                     </ul>
 
@@ -145,7 +302,7 @@
                                     <button class="menu-close"><i class="ti-close"></i></button>
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
                                         <li class="menu-item-has-children">
-                                            <a href="#">Home</a>
+                                            <a href="#">Trang chủ</a>
                                             <!-- <ul class="sub-menu"> -->
                                             <!-- <li><a href="https://nhunghieu.github.io">Main Home</a></li> -->
                                             <!-- <li><a href="https://wpocean.com/html/tf/loveme/index-2.html">Wedding Planner</a></li> -->
@@ -157,19 +314,22 @@
                                             <!-- </ul> -->
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#couple">Couple</a>
+                                            <a href="#couple">Cặp đôi</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#story">Story</a>
+                                            <a href="#story">Chuyện tình yêu</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#gallery">Photos</a>
+                                            <a href="#gallery">Album cưới</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#RSVP">Wishes</a>
+                                            <a href="#RSVP">Lời chúc</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#event">Events</a>
+                                            <a href="#event">Sự kiện</a>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#HappyMoney">Mừng cưới</a>
                                         </li>
                                     </ul>
 
@@ -253,7 +413,8 @@
                                     <div data-swiper-parallax="300" class="slide-title"
                                         style="transform: translate3d(300px, 0px, 0px); transition-duration: 0ms;"
                                         bis_skin_checked="1">
-                                        <h2>Hưng &amp; Loan</h2>
+                                        <h2>Hưng <i class="fa fa-fw fa-heart-o"></i> Loan</h2>
+										<!--<h2>Hưng</h2><i class="fa fa-fw fa-heart-o"></i><h2>Loan</h2>-->
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text"
                                         style="transform: translate3d(400px, 0px, 0px); transition-duration: 0ms;"
@@ -284,7 +445,7 @@
                                     <div data-swiper-parallax="300" class="slide-title"
                                         style="transform: translate3d(300px, 0px, 0px); transition-duration: 0ms;"
                                         bis_skin_checked="1">
-                                        <h2>Hưng &amp; Loan</h2>
+                                        <h2>Hưng <i class="fa fa-fw fa-heart-o"></i> Loan</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text"
                                         style="transform: translate3d(400px, 0px, 0px); transition-duration: 0ms;"
@@ -316,7 +477,7 @@
                                     <div data-swiper-parallax="300" class="slide-title"
                                         style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
                                         bis_skin_checked="1">
-                                        <h2>Hưng &amp; Loan</h2>
+                                        <h2>Hưng <i class="fa fa-fw fa-heart-o"></i> Loan</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text"
                                         style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
@@ -348,7 +509,7 @@
                                     <div data-swiper-parallax="300" class="slide-title"
                                         style="transform: translate3d(-300px, 0px, 0px); transition-duration: 0ms;"
                                         bis_skin_checked="1">
-                                        <h2>Hưng &amp; Loan</h2>
+                                        <h2>Hưng <i class="fa fa-fw fa-heart-o"></i> Loan</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text"
                                         style="transform: translate3d(-400px, 0px, 0px); transition-duration: 0ms;"
@@ -380,7 +541,7 @@
                                     <div data-swiper-parallax="300" class="slide-title"
                                         style="transform: translate3d(-300px, 0px, 0px); transition-duration: 0ms;"
                                         bis_skin_checked="1">
-                                        <h2>Hưng &amp; Loan</h2>
+                                        <h2>Hưng <i class="fa fa-fw fa-heart-o"></i> Loan</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text"
                                         style="transform: translate3d(-400px, 0px, 0px); transition-duration: 0ms;"
@@ -526,7 +687,7 @@
                         <div class="section-title-simg">
                             <img src="./WeddingPlanner/section-title2.png" alt="">
                         </div>
-                        <h2>Our Love Story</h2>
+                        <h2>Chuyện Tình Yêu</h2>
                         <div class="section-title-img">
                             <div class="round-ball"></div>
                         </div>
@@ -652,7 +813,7 @@
                     <div class="section-title-simg">
                         <img src="./WeddingPlanner/section-title2.png" alt="">
                     </div>
-                    <h2>Sweet Moments</h2>
+                    <h2>Khoảnh khắc ngọt ngào</h2>
                     <div class="section-title-img">
                         <div class="round-ball"></div>
                     </div>
@@ -828,7 +989,7 @@
                         <div class="section-title-simg">
                             <img src="./WeddingPlanner/section-title2.png" alt="">
                         </div>
-                        <h2>Wishes for the couple</h2>
+                        <h2>Lời chúc dành cho cặp đôi</h2>
                         <div class="section-title-img">
                             <div class="round-ball"></div>
                         </div>
@@ -907,7 +1068,7 @@
                             </select>
                         </div>
                         <div class="submit-area">
-                            <button type="submit" class="theme-btn-s3">Send Message</button>
+                            <button type="submit" class="theme-btn-s3" >Gửi lời chúc</button>
                         </div>
                     </form>
                     <div class="border-style"></div>
@@ -933,7 +1094,7 @@
                     <div class="section-title-simg">
                         <img src="./WeddingPlanner/section-title2.png" alt="">
                     </div>
-                    <h2>TIME AND PLACE</h2>
+                    <h2>Sự Kiện Cưới</h2>
                     <div class="section-title-img">
                         <div class="round-ball"></div>
                     </div>
@@ -944,18 +1105,17 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="wpo-event-item">
                             <div class="wpo-event-text">
-                                <h2>BRIDE'S WEDDING PARTY</h2>
+                                <h2>LỄ VU QUY</h2>
                                 <ul>
                                     <li><img src="./WeddingPlanner/assets/images/events/event_1.jpeg" alt=""
                                             class="img img-responsive"></li>
-                                    <li>Sunday, 26 Mar, 2023
-                                        15:00 PM</li>
-                                    <li>Bride's house</li>
+                                    <li>xx:xx xM 20/04/2024</li>
+                                    <li>Thôn Cáy, xã Đoàn Thượng, huyện Gia Lộc, tỉnh Hải Dương</li>
                                     <!-- <li>Phone : +12345678910</li> -->
 
                                     <!-- <li> <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">See Location</a></li> -->
                                     <a style="font-weight: 700;color: #8facc2;position: relative;display: inline-block;margin-top: 20px;margin-bottom: 15px;font-size: 18px;line-height: 30px;text-decoration:underline;"
-                                        href="https://www.google.com/maps/place/21%C2%B006'10.7%22N+105%C2%B043'44.1%22E/@21.1024358,105.7275456,17.75z/data=!4m5!3m4!1s0x0:0xdc122a940d37a918!8m2!3d21.10296!4d105.728929"
+                                        href="https://maps.app.goo.gl/p4chwcygVeELRKa77"
                                         target="_blank">See Location</a>
                                 </ul>
                             </div>
@@ -970,18 +1130,17 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="wpo-event-item">
                             <div class="wpo-event-text">
-                                <h2>GROOM'S WEDDING PARTY</h2>
+                                <h2>LỄ THÀNH HÔN</h2>
                                 <ul>
                                     <li><img src="./WeddingPlanner/assets/images/events/event_2.jpeg" alt=""
                                             class="img img-responsive"></li>
-                                    <li>Sunday, 26 Mar, 2023
-                                        10:30 AM</li>
-                                    <li>Groom's house</li>
+									<li>xx:xx xM 20/04/2024</li>
+                                    <li>Thôn Thụy Mão, xã Mão Điền, huyện Thuận Thành, tỉnh Bắc Ninh</li>
                                     <!-- <li>Phone : +12345678910</li> -->
 
                                     <!-- <li> <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">See Location</a></li> -->
                                     <a style="font-weight: 700;color: #8facc2;position: relative;display: inline-block;margin-top: 20px;margin-bottom: 15px;font-size: 18px;line-height: 30px;text-decoration:underline;"
-                                        href="https://www.google.com/maps/place/60+%C4%90.+T%E1%BA%A3+Thanh+Oai,+T%E1%BA%A3+Thanh+Oai,+Thanh+Tr%C3%AC,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9545025,105.8095552,18.25z/data=!4m5!3m4!1s0x3135ad19ea74f721:0x3a26357b6e3c5980!8m2!3d20.9545305!4d105.80996"
+                                        href="https://maps.app.goo.gl/LbKEqbhtvWFPNRoE6"
                                         target="_blank">See Location</a>
                                 </ul>
                             </div>
@@ -996,18 +1155,17 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="wpo-event-item">
                             <div class="wpo-event-text">
-                                <h2>KARMA WEDDING PARTY</h2>
+                                <h2>TIỆC CƯỚI NHÀ GÁI</h2>
                                 <ul>
                                     <li><img src="./WeddingPlanner/assets/images/events/event_3.jpeg" alt=""
                                             class="img img-responsive"></li>
-                                    <li>Sunday, 16 April, 2023
-                                        09:00 AM</li>
-                                    <li>Vejo restaurant</li>
+                                    <li>xx:xx xM 21/04/2024</li>
+                                    <li>Thôn Cáy, xã Đoàn Thượng, huyện Gia Lộc, tỉnh Hải Dương</li>
                                     <!-- <li>Phone : +12345678910</li> -->
 
                                     <!-- <li> <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">See Location</a></li> -->
                                     <a style="font-weight: 700;color: #8facc2;position: relative;display: inline-block;margin-top: 20px;margin-bottom: 15px;font-size: 18px;line-height: 30px;text-decoration:underline;"
-                                        href="https://www.google.com/maps/place/VEJO+-+The+Vege+journey/@21.0332407,105.8407447,15.5z/data=!4m6!3m5!1s0x3135abc5ffbf1827:0x4f92650ad06f2835!8m2!3d21.0337565!4d105.8463605!16s%2Fg%2F11jqyzb1ld"
+                                        href="https://maps.app.goo.gl/p4chwcygVeELRKa77"
                                         target="_blank">See Location</a>
                                 </ul>
                             </div>
@@ -1026,6 +1184,76 @@
     </section>
     <!-- end wpo-event-section -->
     <!-- end wpo-partners-section-->
+	
+	<!-- end wpo-cta-section -->
+
+    <!-- start wpo-event-section -->
+    <section class="wpo-event-section" id="HappyMoney">
+        <div class="container">
+            <div class="row">
+                <div class="wpo-section-title-s2">
+                    <div class="section-title-simg">
+                        <img src="./WeddingPlanner/section-title2.png" alt="">
+                    </div>
+                    <h2>Hộp mừng cưới</h2>
+                    <div class="section-title-img">
+                        <div class="round-ball"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-event-wrap">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wpo-event-item">
+                            <div class="wpo-event-text">
+                                <h2>Mừng cưới đến chú rể</h2>
+                                <ul>
+                                    <li><img src="./WeddingPlanner/VietinBank_Hung.jpg" alt=""
+                                            class="img img-responsive"></li>
+                                    <li>Ngân hàng: VietinBank</li>
+									<li>Tên tài khoản: Đỗ Đăng Hưng</li>
+									<li>Số tài khoản: 106003749412</li>
+                                    <li>Chi nhánh: VietinBank CN BAC NINH - HOI SO</li>
+                                </ul>
+                            </div>
+                            <div class="event-shape-1">
+                                <img src="./WeddingPlanner/event-shape-1.png" alt="">
+                            </div>
+                            <div class="event-shape-2">
+                                <img src="./WeddingPlanner/event-shape-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="wpo-event-item">
+                            <div class="wpo-event-text">
+                                <h2>Mừng cưới đến cô dâu</h2>
+                                <ul>
+                                    <li><img src="./WeddingPlanner/VietinBank_Loan.jpg" alt=""
+                                            class="img img-responsive"></li>
+                                    <li>Ngân hàng: VietinBank</li>
+									<li>Tên tài khoản: Trần Thị Loan</li>
+									<li>Số tài khoản: 103002667647</li>
+                                    <li>Chi nhánh: VietinBank CN KCN HAI DUONG - HOI SO</li>
+                                </ul>
+                            </div>
+                            <div class="event-shape-1">
+                                <img src="./WeddingPlanner/event-shape-1.png" alt="">
+                            </div>
+                            <div class="event-shape-2">
+                                <img src="./WeddingPlanner/event-shape-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end container -->
+    </section>
+    <!-- end wpo-event-section -->
+    <!-- end wpo-partners-section-->
+	
+	
     <!-- start of wpo-site-footer-section -->
     <footer class="wpo-site-footer">
         <!-- end container -->
@@ -1045,20 +1273,59 @@
     <!-- color-switcher -->
     </div>
     <div id="speakerId" style="position: fixed; left: 15px; bottom: 15px;">
-        <audio src="./WeddingPlanner/sources/music/A Thousand Years.mp3" id="audio_1" preload="none" loop></audio>
-        <audio src="./WeddingPlanner/sources/music/Beautiful In White.mp3" id="audio_2" preload="none" loop></audio>
-        <audio src="./WeddingPlanner/sources/music/Canon in D (Pachelbel's Canon).mp3" id="audio_3" preload="none"
+		<audio src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3" id="audio" preload="none" loop></audio>
+        <audio src="./WeddingPlanner/sources/music_HungLoan/XungDoiCuoiThoi.mp3" id="audio_1" preload="none" loop></audio>
+        <audio src="./WeddingPlanner/sources/music_HungLoan/GioKhongCuoiThiNaoCuoi.mp3" id="audio_2" preload="none" loop></audio>
+        <audio src="./WeddingPlanner/sources/music_HungLoan/NgayDauTien.mp3" id="audio_3" preload="none"
             loop></audio>
-        <audio src="./WeddingPlanner/sources/music/I do.mp3" id="audio_4" preload="none" loop></audio>
-        <audio src="./WeddingPlanner/sources/music/Nothing's Gonna Change My Love for You.mp3" id="audio_5"
+        <audio src="./WeddingPlanner/sources/music_HungLoan/LamVoAnhNhe.mp3" id="audio_4" preload="none" loop></audio>
+        <audio src="./WeddingPlanner/sources/music_HungLoan/EmDongYIDo.mp3" id="audio_5"
             preload="none" loop></audio>
         <span id="playerVolumeOff">
-            <a href="javascript:playSoundMultiple();"><img src="./WeddingPlanner/images/Sound on.png" width="30"
-                    height="30" border="0" alt="Click for Sound"></a><br>
+			<a href="javascript:playSoundMultiple();">
+				<!--<svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+						  <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"></path>
+				</svg>-->
+				<svg style="width:30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+					<defs>
+					</defs>
+					<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+						<circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,190,190); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+						<path d="M 44.86 26.519 l -10.182 6.932 H 18.373 c -1.963 0 -3.569 1.894 -3.569 4.208 v 20.818 c 0 2.314 1.606 4.208 3.569 4.208 h 16.305 l 10.182 6.932 c 2.46 1.675 5.535 -0.419 5.535 -3.768 V 30.288 C 50.395 26.938 47.32 24.845 44.86 26.519 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 47.996 23.383 l -10.182 6.932 H 21.51 c -1.963 0 -3.569 1.894 -3.569 4.208 v 20.818 c 0 2.314 1.606 4.208 3.569 4.208 h 16.305 l 10.182 6.932 c 2.46 1.675 5.535 -0.419 5.535 -3.768 V 27.151 C 53.531 23.802 50.456 21.708 47.996 23.383 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 72.214 55.871 c -0.768 0 -1.535 -0.293 -2.121 -0.879 l -11 -10.999 c -1.172 -1.172 -1.172 -3.071 0 -4.243 c 1.172 -1.172 3.07 -1.171 4.242 0 l 11 11 c 1.172 1.171 1.172 3.07 0 4.242 C 73.749 55.578 72.981 55.871 72.214 55.871 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 61.214 55.871 c -0.768 0 -1.535 -0.293 -2.121 -0.879 c -1.172 -1.172 -1.172 -3.071 0 -4.242 l 11 -11 c 1.172 -1.171 3.07 -1.171 4.242 0 c 1.172 1.171 1.172 3.071 0 4.243 l -11 10.999 C 62.749 55.578 61.981 55.871 61.214 55.871 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 74.805 53.083 c -0.768 0 -1.535 -0.293 -2.121 -0.879 l -11 -11 c -1.172 -1.171 -1.172 -3.071 0 -4.242 c 1.172 -1.172 3.07 -1.172 4.242 0 l 11 11 c 1.172 1.171 1.172 3.071 0 4.242 C 76.34 52.79 75.572 53.083 74.805 53.083 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 63.805 53.083 c -0.768 0 -1.535 -0.293 -2.121 -0.879 c -1.172 -1.171 -1.172 -3.071 0 -4.242 l 11 -11 c 1.172 -1.172 3.07 -1.172 4.242 0 c 1.172 1.171 1.172 3.071 0 4.242 l -11 11 C 65.34 52.79 64.572 53.083 63.805 53.083 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					</g>
+				</svg>		
+			</a><br>
+            <!--<a href="javascript:playSoundMultiple();"><img src="./WeddingPlanner/images/Sound off.png" width="30"
+                    height="30" border="0" alt="Click for Sound"></a><br>-->
         </span>
         <span style="display:none;" id="playerVolumeOn">
-            <a href="javascript:playSoundMultiple();"><img src="./WeddingPlanner/images/Sound off.png" width="30"
-                    height="30" border="0" alt="Click for Sound"></a><br>
+			<a href="javascript:playSoundMultiple();">
+				<!--<svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+					  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+					  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+					  <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path>
+					</svg>-->
+				<svg style="width:30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+					<defs>
+					</defs>
+					<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+						<circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,190,190); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+						<path d="M 44.945 25.8 l -10.549 7.182 H 17.504 c -2.033 0 -3.697 1.962 -3.697 4.359 v 21.568 c 0 2.398 1.664 4.359 3.697 4.359 h 16.892 l 10.549 7.182 c 2.549 1.735 5.734 -0.434 5.734 -3.904 V 29.704 C 50.679 26.233 47.494 24.065 44.945 25.8 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 56.021 65.662 v -6 c 6.361 0 11.537 -5.176 11.537 -11.537 c 0 -6.362 -5.176 -11.538 -11.537 -11.538 v -6 c 9.67 0 17.537 7.868 17.537 17.538 C 73.558 57.795 65.69 65.662 56.021 65.662 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 56.02 42.067 c 3.345 0 6.057 2.712 6.057 6.057 s -2.712 6.057 -6.057 6.057" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,152,152); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 48.194 22.55 l -10.549 7.182 H 20.753 c -2.033 0 -3.697 1.962 -3.697 4.359 v 21.568 c 0 2.398 1.664 4.359 3.697 4.359 h 16.892 L 48.194 67.2 c 2.549 1.735 5.734 -0.434 5.734 -3.904 V 26.454 C 53.929 22.984 50.743 20.815 48.194 22.55 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 59.27 62.413 v -6 c 6.361 0 11.537 -5.176 11.537 -11.538 S 65.631 33.338 59.27 33.338 v -6 c 9.67 0 17.537 7.867 17.537 17.538 S 68.939 62.413 59.27 62.413 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+						<path d="M 59.269 38.818 c 3.345 0 6.057 2.712 6.057 6.057 s -2.712 6.057 -6.057 6.057" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					</g>
+				</svg>
+			</a><br>
+            <!--<a href="javascript:playSoundMultiple();"><img src="./WeddingPlanner/images/Sound on.png" width="30"
+                    height="30" border="0" alt="Click for Sound"></a><br>-->
         </span>
     </div>
     </div>
@@ -1120,6 +1387,7 @@
         }
 
         function playSoundMultiple() {
+		debugger;
             countClickSound += 1;
             if (numberSound == 0) {
                 numberSound = 1;
